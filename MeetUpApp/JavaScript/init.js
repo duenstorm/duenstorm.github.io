@@ -28,18 +28,18 @@
     
     }
     else{
+	    /*
         keyValue=searchArr[0];
         keyValue=keyValue.substring((keyValue.indexOf("=")+1),keyValue.length);
         $.get("https://api.meetup.com/2/categories",{"access_token":keyValue}, function(data, status){
             document.write(data);
             document.write(status);
         });
-
-/*        
+*/
         $.ajax({
           type: "GET",
           beforeSend: function(request) {
-            request.setRequestHeader("Origin", "http://127.0.0.1:8383/MeetupApp/index.html");
+            request.setRequestHeader("Access-Control-Allow-Origin", "https://duenstorm.github.io/MeetUpApp");
           },
           url: "https://api.meetup.com/2/categories/",
           data: "access_token="+keyValue,
@@ -47,7 +47,7 @@
             document.write(msg);
           }
         });
-		*/
+		
     }
    
     
