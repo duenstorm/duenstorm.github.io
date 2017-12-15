@@ -46,6 +46,7 @@
           data: "access_token="+keyValue,
           success: function(msg) {
             document.write(msg);
+		  console.log("got em");
           }
         });
 		
