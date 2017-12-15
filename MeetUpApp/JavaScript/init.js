@@ -38,9 +38,9 @@
 */
         $.ajax({
           type: "GET",
-          beforeSend: function(request) {
-            request.setRequestHeader("Access-Control-Allow-Origin", "https://duenstorm.github.io/MeetUpApp");
-          },
+          headers: {
+		"Access-Control-Allow-Origin": "https://duenstorm.github.io/MeetUpApp"	  
+	  },
           url: "https://api.meetup.com/2/categories/",
           data: "access_token="+keyValue,
           success: function(msg) {
