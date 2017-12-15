@@ -41,7 +41,8 @@
         $.ajax({
           type: "GET",
           headers: {
-		"Access-Control-Allow-Origin": "https://duenstorm.github.io/MeetUpApp"	  
+		"Access-Control-Allow-Origin": "https://duenstorm.github.io/MeetUpApp",
+		"Authorization":"Bearer "+keyValue
 	  },
           url: "https://api.meetup.com/2/categories/",
           data: "access_token="+keyValue,
