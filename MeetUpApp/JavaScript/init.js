@@ -22,9 +22,10 @@
     search=$(location).attr("hash");
     search=search.replace("#","");
     searchArr=search.split("&");
-    
+    console.log(searchArr.length);
     if(searchArr.length<2){
         $(location).attr("href", "https://secure.meetup.com/oauth2/authorize?client_id=k2a9mnqnc4mlvoggjtlhu8p24h&response_type=token&redirect_uri=https://duenstorm.github.io/MeetUpApp");
+    
     }
     else{
         keyValue=searchArr[0];
