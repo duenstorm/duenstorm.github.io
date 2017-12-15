@@ -46,8 +46,9 @@
             document.write(msg);
           }
         });
+		*/
     }
-  */  
+   
     
     
 
