@@ -28,10 +28,11 @@
     
     }
     else{
-	    /*
+	    
         keyValue=searchArr[0];
         keyValue=keyValue.substring((keyValue.indexOf("=")+1),keyValue.length);
-        $.get("https://api.meetup.com/2/categories",{"access_token":keyValue}, function(data, status){
+        /*
+	    $.get("https://api.meetup.com/2/categories",{"access_token":keyValue}, function(data, status){
             document.write(data);
             document.write(status);
         });
