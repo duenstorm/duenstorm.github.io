@@ -46,6 +46,7 @@
           url: "https://api.meetup.com/2/categories/",
           data: "access_token="+keyValue,
 	  dataType: "json",
+          crossDomain: true,
           success: function(msg) {
             document.write(msg);
 		  console.log("got em");
