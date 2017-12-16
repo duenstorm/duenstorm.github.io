@@ -49,10 +49,12 @@
           success: function(msg) {
             document.write(msg);
 		  console.log("got em");
+		  document.write("got em");
           },
 	  error: function(xhr, status, error){
 	       console.log(status);
 	       console.log(error);
+	       document.write("failure");
 	  }
         });
 		
