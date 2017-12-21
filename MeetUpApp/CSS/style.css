@@ -1,0 +1,210 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 Dec 2017, 9:41:41 AM
+    Author     : duens
+*/
+
+body{
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+}
+
+head{
+    margin: 0px;
+    padding: 0px;
+}
+
+#settings{
+    border: none;
+    background: none;
+    outline: none;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+}
+
+header img{
+    max-height: 80px;
+    max-width: 100%;
+}
+
+header div:first-of-type{
+    height: 100px;
+}
+
+header div:nth-of-type(2){
+    height: 100px;
+    padding: 15px;
+}
+
+
+.fa-gear{
+   font-size: 50px;
+   margin: auto;
+}
+
+.fa-gear:hover{
+    color: #f64060;
+    cursor: pointer;
+}
+
+#map{
+    width: 100%;
+    height: 350px;
+}
+
+main{
+    background-color: white;
+    min-height: 500px;
+    padding: 15px;
+}
+
+
+#groups .row, #show .row{
+    padding: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#groups > p{
+    margin: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#show .row{
+    background-color: #f64060;
+    color: white;
+}
+
+#groups img, #show img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#groups .row div:first-of-type, #show .row div:first-of-type{
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#groups .row div:nth-of-type(3), #show .row div:nth-of-type(3){
+    height: 200px;
+}
+
+#groups .row ul, #show .row ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#groups .row li, #show .row li{
+    margin: 20px;
+}
+
+#groups .row button{
+    background-color: #f64060;
+    color: white;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#show .row button{
+    background-color: white;
+    color: #f64060;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#groups .row button:hover{
+    opacity: 0.8;
+}
+
+#show .row button:hover{
+    background-color: #eee;
+}
+
+#head{
+    padding: 15px;
+}
+
+#head input{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px #555 solid;
+    padding: 10px;
+}
+
+#head input:focus{
+    background-color: #f64060;
+    color: white;
+}
+
+#foot, #head div:nth-of-type(3){
+    font-size: 30px;
+    text-align: center;
+}
+
+#foot .fa-caret-left, #foot .fa-caret-right, #head .fa-caret-right, #head .fa-caret-left{
+    margin: 10px;
+    color: #f64060;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+}
+#foot .fa-caret-left:active, #foot .fa-caret-right:active, #head .fa-caret-right:active, #head .fa-caret-left:active{
+    margin: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #f64060;
+    color: white;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.modal-body{
+    height: 200px;
+    overflow: auto;
+}
+
+#categories .row{
+    height: 50px;
+    padding: 5px;
+}
+
+#categories input{
+    transform: scale(2,2);
+}
+
+.modal-footer{
+    height: 50px;
+    overflow: auto;
+}
+
+.fa-circle-o-notch{
+    color: #f64060;
+    opacity: 0;
+}
