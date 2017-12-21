@@ -20,6 +20,10 @@ var groups = ( function(o) {
         var listGrp = function(response) {
             var line, colOne, colTwo, colThree, photo, descript, head, content, list, rowOne, rowTwo, location, link, linkValue;
             
+            
+            myMap._default();
+            $("#show .row").remove();
+                
             $("#groups .row, #groups > p").remove();
             total=response.meta.total_count;
             checkPage();
@@ -165,19 +169,13 @@ var groups = ( function(o) {
         };
         
         $("#head .fa-caret-right, #foot .fa-caret-right").click( function() {
-            
-            myMap._default();
-            $("#show .row").remove();
-            
+
             page++;
             req.group(page-1, pageLoad, searchText);
         
         });
         
         $("#head .fa-caret-left, #foot .fa-caret-left").click( function() {
-            
-            myMap._default();
-            $("#show .row").remove();
             
             page--;
             req.group(page-1, pageLoad, searchText);
