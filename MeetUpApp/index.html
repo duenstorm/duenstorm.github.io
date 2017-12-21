@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <header class="row"> 
+            <div class="col-11">
+                <img src="Images/logo.svg">
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn" data-toggle="modal" id="settings" data-target="#modal"><i class="fa fa-gear"></i></button>
+            </div>
+        </header>
+        <div id="map"></div>
+        <main class="container">
+            <div id="show">
+                
+            </div>
+            <div id="head">
+                <div class="row">
+                    <div class="col-md-3"><h1>Groups<i class='fa fa-circle-o-notch fa-spin'></i></h1></div>
+                    <div class="col-md-5"><input type="text" placeholder="Search group name..."></div>
+                    <div class="col-md-4"><i class="fa fa-caret-left"></i><span>1</span><i class="fa fa-caret-right"></i></div>
+                </div>
+            </div>
+            <div id="groups">
+                
+            </div>
+            <div id="foot">
+                <i class="fa fa-caret-left"></i><span>1</span><i class="fa fa-caret-right"></i>
+            </div>
+        </main>
+        <footer></footer>
+        
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Categories<i class='fa fa-circle-o-notch fa-spin'></i></h1>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body" id="categories">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script src="JavaScript/init.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBGjm4tYCaTedWvXVwZcKtFwo0M2Pencs&callback=map"></script>
+        <script src="JavaScript/map.js"></script>
+        <script src="JavaScript/requests.js"></script>
+        <script src="JavaScript/groups.js"></script>
+        <script src="JavaScript/categories.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        
+    </body>
+</html>
